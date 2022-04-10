@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0%;
+}
+
+.side-menu{
+    position: fixed;
+    background: rgb(252, 231, 231);
+    width: 90px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    overflow-x: hidden;
+    transition: width .3s ease-in-out;
+}
+
+.side-menu.active{
+    width: 300px;
+}
+
+.side-menu .top-section{
+    position: relative;
+}
+
+.side-menu .logo{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.side-menu .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.side-menu .title h2{
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+}
+
+/* --------------main-menu--------------- */
+
+.side-menu .main-menu{
+    padding: 30px 0px;
+}
+
+.side-menu .main-menu .menu-item{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    margin: 5px 0px;
+}
+
+.side-menu .main-menu .menu-item .menu-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.side-menu.active .main-menu .menu-item  span{
+    position: absolute;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.side-menu .main-menu .menu-item span{
+    display: none;
+}
+
+
+.side-menu .main-menu .sub-menu{
+    color: #000;
+    margin-left: 25px;
+    border-left: 1px solid #333;
+    box-sizing: border-box;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.side-menu .main-menu .sub-menu.active{
+    max-height: 200px;
+}
+
+.side-menu .main-menu .sub-menu a{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+.side-menu .main-menu .sub-menu .menu-icon {
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    font-size: 24px;
+}
